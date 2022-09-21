@@ -3,7 +3,7 @@
 Desarrollo del juego del "AHORCADO" usando HTML, CSS y JAVASCRIPT vanila 
 
 <p align="center" >
-     <img width="500" heigth="300" src="Img\Captura de pantalla.png">
+     <img width="500" heigth="300" src="img\Captura de pantalla.png">
 </p>
 
 ***Descripcion:***
