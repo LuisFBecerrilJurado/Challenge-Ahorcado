@@ -27,7 +27,7 @@ Desarrollo del juego del "AHORCADO" usando HTML, CSS y JAVASCRIPT vanila
 
 ## Links:
 
-* Url juego:
+* Url juego: https://luisfbecerriljurado.github.io/Challenge-Ahorcado/
 
 
 #**challengeonejuegoahorcado3**
