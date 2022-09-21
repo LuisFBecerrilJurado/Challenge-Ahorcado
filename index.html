@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Challenge: Ahorcado</title>
+</head>
+<body>
+
+    <header>
+        <section class="ContenedorImgTitulo">
+            <a href="index.html">
+                <img src="/Img/Top.svg" alt="Logo Alura">
+            </a>
+        </section>
+        <h1 class="Titulo">AHORCADO</h1>
+    </header>
+    <main>
+        <section class="ahorcado">
+            <section class="pantallaInicio" id="pantallaInicio" >
+                <button onclick="iniciarjuego()" id="iniciarJuego" >Nuevo Juego</button>
+                <button onclick="agregarpalabra()" id="agregarPalabra" >Agregar Palabra</button>
+            </section>
+            <section class="pantallaNuevaPalabra" id="pantallaNuevaPalabra">
+                <input type="text" class="añadir" id="añadir" placeholder="Ingrese nueva palabra" onkeypress="return soloLetras(event)"></input>
+                <div class="informacion">
+                    <img src="/Img/alerticon.png" alt="iconoExclamación"class="informacion">
+                    <p class="info" class="mensajeAlerta">Minimo 3 letras</p>
+                </div>
+                <div class="botonesAñadirPalabra">
+                    <button onclick="nuevaPalabra()" id="botonAgregarPalabraFuncion" > Agregar Palabra </button>
+                    <button onclick="iniciarjuego()" id="iniciarJuego"> Jugar </button>
+                </div>
+            </section>
+            <section class="pantallaJuego" id="pantallaJuego">
+                <section class="ahorcadoDibujo">
+                    <canvas id="myCanvas" class="ahorcadoFigura" width="350px" height="360px"></canvas>
+                    <section class="palabra">
+                        <div id="palabraOculta" class="palabraOculta"></div>
+                        <br>
+                        <div id="letrasEquivocadas">
+                            <label class="letrasErroneas">Letras Erroneas</label>
+                        </div>
+                        <div id="letrasMal" class="letrasMal"></div>
+                        <div id="vidas" class="perdiste">
+                            <p>Vidas Actuales: 6</p>
+                        </div>
+                    </section>
+                </section>
+                <section class="botonesJuego">
+                    <button onclick="iniciarjuego()"id="nuevoJuego">Nuevo Juego</button>
+                    <button onclick="rendirse()" id="rendirse">Rendirse</button>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="copyrigth">
+            <p class="texto-footer">Elaborado por: Luis Francisco Becerril Jurado</p>
+            <p class="texto-footer">Oracle Next Education 2022 </p>
+        </div>
+        <div class="enlaces">
+            <span><a href="https://github.com/LuisFBecerrilJurado" target="_blank"><img src="img/github_icon.png" alt="GitHub"></a></span>
+            <span><a href="https://www.linkedin.com/in/luis-francisco-becerril-jurado-255753127/" target="_blank"><img src="img/linkedin_icon.png" alt="Linkedin"></a></span>
+        </div>
+    </footer>
+
+    <script src="/Scripts/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
