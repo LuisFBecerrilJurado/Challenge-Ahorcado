@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+html{
+    background: #00c3ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 body{
     width: auto;
     font-family: 'Poppins', sans-serif;
     color: black;
     width: 99%;
-    background-image: url(img/pexels-lukas-628241.jpg);
-    background-size:100%;
-    background-repeat:inherit;
 }
 
 main{
